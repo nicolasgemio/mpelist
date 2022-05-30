@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.movieCard{
+  list-style: none;
+  font-size: 0.8rem;
+}
+.movieImage{
+  border-radius: 25px;
+  background-color: white;
+  text-shadow: black 3px 4px;
+}
+.moviesGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  gap: 2px;
+  padding: 5px;
+  justify-content: center;
+}
+.headerGrid{
+  padding: 15px;
+}
+.listGrid{
+  padding: 15px;
+}
+.paginationGrid{
+  justify-content: center;
+}

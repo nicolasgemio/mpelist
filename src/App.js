@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { MoviesGrid } from './Components/MoviesGrid';
+import { Footer } from './Components/Footer';
+import { Header } from './Components/Header';
+import { SearchBar } from './Components/SearchBar';
+import { ListGrid } from './Components/ListGrid';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <div className='row'>
+        <div className='col-md-6'>
+          <ListGrid></ListGrid>
+        </div>
+        <div className='col-md-6'>
+          <SearchBar></SearchBar>
+          <MoviesGrid></MoviesGrid>
+        </div>
+      </div>
+
+      <Footer></Footer>
     </div>
   );
 }
