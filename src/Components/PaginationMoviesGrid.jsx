@@ -3,20 +3,20 @@ export function PaginationMoviesGrid(){
     return (<div className="paginationGrid"><nav aria-label="Page navigation example">
     <ul className="pagination">
       <li className="page-item">
-        <a className="page-link" href="#" aria-label="Previous">
+        <div className="page-link" aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
-        </a>
+        </div>
       </li>
-      <li className="page-item"><a className="page-link" href="#">1</a></li>
-      <li className="page-item"><a className="page-link" href="#">2</a></li>
-      <li className="page-item"><a className="page-link" href="#">3</a></li>
-      <li className="page-item"><a className="page-link" href="#">4</a></li>
-      <li className="page-item"><a className="page-link" href="#">5</a></li>
+      <li className="page-item"><div className="page-link">1</div></li>
+      <li className="page-item"><div className="page-link">2</div></li>
+      <li className="page-item"><div className="page-link">3</div></li>
+      <li className="page-item"><div className="page-link">4</div></li>
+      <li className="page-item"><div className="page-link">5</div></li>
 
       <li className="page-item">
-        <a className="page-link" href="#" aria-label="Next">
+        <div className="page-link" aria-label="Next">
           <span aria-hidden="true">&raquo;</span>
-        </a>
+        </div>
       </li>
     </ul>
   </nav>

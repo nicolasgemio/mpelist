@@ -1,13 +1,15 @@
 
-export function ListItem(){
+export function ListItem(props){
+    const p = props.Item;
+
     return (<div>
-        <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
+        <div className="list-group-item list-group-item-action flex-column align-items-start">
             <div className="d-flex w-100 justify-content-between">
-                <h5 className="mb-1">Nombre de Pelicula</h5>
-                <small>Hace 3 dias</small>
+                <h5 className="mb-1">{p.Nombre}</h5>
+                <small>{p.Tiempo}</small>
             </div>
-            <p className="mb-1">Descripción</p>
-            <small>Donec id elit non mi porta.</small>
-        </a>
+            <p className="mb-1">{p.Descripcion}</p>
+            <small>{p.Texto}</small>
+        </div>
         </div>)
 }

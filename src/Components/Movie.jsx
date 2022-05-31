@@ -4,6 +4,5 @@ export default function Movie({movie}){
     return(<li className="movieCard">
         <img width={80} height={138} className="movieImage" src={urlImage} alt={movie.title}></img>
         <div>{movie.title}</div>
-        <div>Description</div>
     </li>);
 }

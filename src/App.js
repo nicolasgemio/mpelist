@@ -2,7 +2,6 @@ import './App.css';
 import { MoviesGrid } from './Components/MoviesGrid';
 import { Footer } from './Components/Footer';
 import { Header } from './Components/Header';
-import { SearchBar } from './Components/SearchBar';
 import { ListGrid } from './Components/ListGrid';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           <ListGrid></ListGrid>
         </div>
         <div className='col-md-6'>
-          <SearchBar></SearchBar>
           <MoviesGrid></MoviesGrid>
         </div>
       </div>

@@ -8,7 +8,7 @@ export function MoviesGrid(){
             <ul className="moviesGrid .bg-light">
                 {
                     movies.map((movie) => {
-                        return (<Movie movie={movie}></Movie>);
+                        return (<Movie key={movie.id} movie={movie}></Movie>);
                     })
                 }       
             </ul>
