@@ -30,11 +30,11 @@ export function PaginationMoviesGrid(props){
           <span aria-hidden="true">&laquo;</span>
         </div>
       </li>
-      <li className={"page-item "+(currentPage != 1 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(1)} className="page-link mplistColor">1</Link></li>
-      <li className={"page-item "+(currentPage != 2 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(2)} className="page-link mplistColor">2</Link></li>
-      <li className={"page-item "+(currentPage != 3 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(3)} className="page-link mplistColor">3</Link></li>
-      <li className={"page-item "+(currentPage != 4 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(4)} className="page-link mplistColor">4</Link></li>
-      <li className={"page-item "+(currentPage != 5 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(5)} className="page-link mplistColor">5</Link></li>
+      <li className={"page-item "+(parseInt(currentPage) !== 1 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(1)} className="page-link mplistColor">1</Link></li>
+      <li className={"page-item "+(parseInt(currentPage) !== 2 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(2)} className="page-link mplistColor">2</Link></li>
+      <li className={"page-item "+(parseInt(currentPage) !== 3 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(3)} className="page-link mplistColor">3</Link></li>
+      <li className={"page-item "+(parseInt(currentPage) !== 4 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(4)} className="page-link mplistColor">4</Link></li>
+      <li className={"page-item "+(parseInt(currentPage) !== 5 ? '' : 'active' )}><Link to="/" onClick={() => getMovies(5)} className="page-link mplistColor">5</Link></li>
 
       <li className="page-item ">
         <div className="page-link mplistColor" aria-label="Next">
