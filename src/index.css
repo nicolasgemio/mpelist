@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: #042832;
+  color: #9FC131;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,9 +9,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+  color: #9FC131;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Lato, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.paginationGrid{
+  text-align: center;
 }
 
 .movieCard{
@@ -20,20 +30,86 @@ code {
   border-radius: 25px;
   background-color: white;
   text-shadow: black 3px 4px;
+  width: 85px;
+  height: 138px;
 }
 .moviesGrid{
   display: grid;
   grid-template-columns: repeat(auto-fill, 120px);
-  gap: 2px;
-  padding: 5px;
+  gap: 5px;
+  padding: 20px;
   justify-content: center;
 }
+.imageGrid{
+  justify-content: stretch;
+  padding-inline-start: 50px; 
+  padding: 0;
+  width: 8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.imageGridDetail{
+  justify-content: stretch;
+  padding-inline-start: 50px; 
+  padding: 0;
+  width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.imageList{
+  height: auto;
+}
 .headerGrid{
-  padding: 15px;
+  padding: 10px;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.footerGrid{
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  height: auto;
+  margin-top:auto
 }
 .listGrid{
-  padding: 15px;
+  gap: 10px;
+  padding: 60px;
+  justify-content: center;
+  margin: 0 auto;
 }
 .paginationGrid{
   justify-content: center;
+}
+.paddingGrid{
+  padding: 50px 200px;
+}
+
+.ctr{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.roundedDiv{
+  border-radius: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.mplistColor{
+  background-color: #9FC131;
+}
+.mpelistColorDisabled{
+  background-color: #004B63;
+  color: #0095A6;
+}
+
+.buttonStyle{
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.title-mpelist{
+  width: 45px;
+  justify-content: center;
+
+}
+.divTest{
+  position: relative;
 }
