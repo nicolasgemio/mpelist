@@ -5,6 +5,7 @@ import { Header } from './Components/Header';
 import { ListGrid } from './Pages/ListGrid';
 import { BrowserRouter as Router, Routes , Route} from 'react-router-dom';
 import { MovieDetail } from './Pages/MovieDetail';
+import { ContactPage } from './Pages/ContactPage';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/" element={<MoviesGrid />} />
             <Route exact path="/MyList" element={<ListGrid />} />
             <Route path="/Movie/:movieId" element={<MovieDetail/>} />
+            <Route path="/Contact/" element={<ContactPage/>} />
           </Routes>
         </main>
         <Footer/>

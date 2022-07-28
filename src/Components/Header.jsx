@@ -17,8 +17,8 @@ export function Header(){
                             <div className="navbar-nav">
                                 <Link className="nav-item nav-link active" to="/">Peliculas</Link>
                                 <Link className="nav-item nav-link" to="/MyList">Mi Lista</Link>
-                                <Link className="nav-item nav-link " to={"d"}>Mi Cuenta</Link>
-                                <Link className="nav-item nav-link" to={"d"}>Contacto</Link>
+                                <Link className="nav-item nav-link " to={"/Contact"}>Mi Cuenta</Link>
+                                <Link className="nav-item nav-link" to="/Contact">Contacto</Link>
                             </div>
                         </div>
                     </nav>
