@@ -25,6 +25,20 @@ code {
   --bs-pagination-active-bg: rgb(44, 42, 42);
 }
 
+.statusBarStyle{
+  --bs-btn-color: #9FC131;
+  color: #9FC131;
+  border-color: #9FC131;
+  --bs-list-group-active-bg:#9FC131;
+  --bs-list-group-active-border-color:#9FC131;
+}
+.btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active{
+    background-color: #9FC131;
+    border-color: #9FC131;
+    background: #9FC131;
+    display:inline-block;
+    --bs-btn-hover-bg: #9FC131;
+}
 .movieCard{
   list-style: none;
   font-size: 0.8rem;
@@ -100,6 +114,9 @@ code {
 .mplistColor{
   background-color: #9FC131;
   color: black;
+}
+.mpelistTextColor{
+  color: #9FC131;
 }
 .mpelistColorDisabled{
   background-color: #004B63;
