@@ -1,7 +1,7 @@
 
 export function PaginationMoviesGrid(){
-    return (<div className="paginationGrid"><nav aria-label="Page navigation example">
-    <ul className="pagination">
+    return (<div className="center"><nav aria-label="Page navigation example">
+    <ul className="pagination paginationGrid">
       <li className="page-item">
         <div className="page-link" aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
