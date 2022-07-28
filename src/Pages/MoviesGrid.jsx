@@ -25,7 +25,7 @@ export function MoviesGrid(){
                     })
                 }       
             </ul>
-            <PaginationMoviesGrid></PaginationMoviesGrid>
+            <PaginationMoviesGrid setMovies={setMovies}></PaginationMoviesGrid>
         </div>
     )
 }
