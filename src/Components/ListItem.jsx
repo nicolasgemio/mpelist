@@ -46,20 +46,6 @@ export function ListItem(props){
                 </div>
             </div>
         </div>
-        {/* <div className="list-group-item list-group-item-action flex-column">
-            <div className="justify-content-between d-flex">
-                <Link className='d-flex' to={"/Movie/"+item.id}>
-                    <img className="imageList imageGrid" src={urlImage} alt={item.tiele}></img>
-                </Link>
-                <div className="pl-5">
-                    <h5 className="mb-1 text-left">{item.title}</h5>
-                    <small>{item.overview}</small>
-                </div>
-            </div>
-
-            <p className="mb-1">{item.Descripcion}</p>
-            <small>{item.Texto}</small>
-        </div> */}
         
         </div>)
 }

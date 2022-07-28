@@ -6,14 +6,15 @@ import { getLists } from '../firebase/dataService';
 export function ListGrid(props){
   const [ currentList, setCurrentList ] = useState([]);
   const [ listStatus, setListStatus ] = useState(0);
-  var updateList = async function(){
-    var datos = await getLists();
+  
+  const updateList = async function(){
+    let datos = await getLists();
     setCurrentList(datos);
   }
 
   useEffect(() => {
     const get = async() => {
-      var datos = await getLists();
+      let datos = await getLists();
       setCurrentList(datos);
     }
     get();
@@ -25,7 +26,7 @@ export function ListGrid(props){
       {
         String(listStatus) === String(0) ?
         currentList.map((item) => { return (<ListItem updateList={updateList} key={item.id} Item={item}></ListItem>)}) :
-        currentList.filter(i => String(i.listStatus) === String(listStatus)).map((item) => { return (<ListItem key={item.id} Item={item}></ListItem>)})
+        currentList.filter(i => String(i.listStatus) === String(listStatus)).map((item) => { return (<ListItem updateList={updateList} key={item.id} Item={item}></ListItem>)})
       }
   </div>)
 }
