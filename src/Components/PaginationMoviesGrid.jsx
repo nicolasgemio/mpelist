@@ -24,7 +24,7 @@ export function PaginationMoviesGrid(props){
 	};
 
     return (<div className="center"><nav aria-label="Page navigation example">
-    <ul className="pagination paginationGrid" style={{"--bs-pagination-border-color": "transparent"}}>
+    <ul className="pagination paginationGrid">
       <li className="page-item">
         <div className="page-link mplistColor" aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
