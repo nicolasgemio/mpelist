@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { saveMovieOnList, deleteMovie, getLists } from '../firebase/dataService';
+import { saveMovieOnList, deleteMovie } from '../firebase/dataService';
 
 export function ListItem(props){
     const item = props.Item;

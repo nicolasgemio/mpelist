@@ -17,13 +17,12 @@ export async function addMovieOnList(movieToAdd){
 export async function saveMovieOnList(movieToUpdate, callback){
   const listCollection = collection(db, 'listas');
   const listSnapshot = await getDocs(listCollection);
-  var refId = '';
   var ref = null;
   listSnapshot.docs.map(doc =>{
-    if(movieToUpdate.id == doc.data().id){
-      refId = doc.ref.id
+    if(String(movieToUpdate.id) === String(doc.data().id)){
       ref = doc.ref;
     }
+    return doc;
   });
 
   await addDoc(listCollection,movieToUpdate, { merge: true });
@@ -34,14 +33,12 @@ export async function saveMovieOnList(movieToUpdate, callback){
 export async function deleteMovie(movieId, callback){
   const listCollection = collection(db, 'listas');
   const listSnapshot = await getDocs(listCollection);
-  var refId = '';
   var ref = null;
-  listSnapshot.docs.map(doc =>{
-    if(movieId == doc.data().id){
-      refId = doc.ref.id
+  listSnapshot.docs.map(doc => {
+    if(String(movieId) === String(doc.data().id)){
       ref = doc.ref;
     }
-    console.log(refId);
+    return doc;
   });
 
   await deleteDoc(ref).then(() => console.log("Data Deleted in firebase"))
@@ -55,7 +52,7 @@ export async function existsMovieOnList(movieId){
   const listList = listSnapshot.docs.map(doc => doc.data());
   var result = false;
   listList.forEach(element => {
-    if(element.id == movieId){ result = true }
+    if(String(element.id) === String(movieId)){ result = true }
   });
   return result;
 }

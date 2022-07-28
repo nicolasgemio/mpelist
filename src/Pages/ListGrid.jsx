@@ -23,9 +23,9 @@ export function ListGrid(props){
       <StatusMovieBar setListStatus={setListStatus}></StatusMovieBar>
       <br/> 
       {
-        listStatus == 0 ?
+        String(listStatus) === String(0) ?
         currentList.map((item) => { return (<ListItem updateList={updateList} key={item.id} Item={item}></ListItem>)}) :
-        currentList.filter(i => i.listStatus == listStatus).map((item) => { return (<ListItem key={item.id} Item={item}></ListItem>)})
+        currentList.filter(i => String(i.listStatus) === String(listStatus)).map((item) => { return (<ListItem key={item.id} Item={item}></ListItem>)})
       }
   </div>)
 }
