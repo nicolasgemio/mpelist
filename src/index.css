@@ -20,6 +20,9 @@ code {
 
 .paginationGrid{
   text-align: center;
+  --bs-pagination-border-color: "transparent";
+  --bs-pagination-active-border-color: rgb(62, 59, 59);
+  --bs-pagination-active-bg: rgb(44, 42, 42);
 }
 
 .movieCard{
@@ -114,3 +117,4 @@ code {
 .divTest{
   position: relative;
 }
+
