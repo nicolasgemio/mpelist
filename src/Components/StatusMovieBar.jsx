@@ -7,7 +7,7 @@ export function StatusMovieBar(props){
     };
 
     return (
-      <div className="btn-group px-5 statusBarStyle" role="group" aria-label="radio toggle button group">
+      <div className="btn-group px-5 statusBarStyle center" role="group" aria-label="radio toggle button group">
         <input type="radio" className="btn-check statusBarStyle" name="btnradio" id="btnradio1" autoComplete="off" defaultChecked onChange={() => changeStatus(0)}/>
         <label className="btn btn-outline-primary statusBarStyle" htmlFor="btnradio1">Todas</label>
         

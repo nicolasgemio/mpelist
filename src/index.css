@@ -31,6 +31,9 @@ code {
   border-color: #9FC131;
   --bs-list-group-active-bg:#9FC131;
   --bs-list-group-active-border-color:#9FC131;
+  width: 1350px;
+  justify-content: center;
+  margin: 0 auto;
 }
 .btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active{
     background-color: #9FC131;
